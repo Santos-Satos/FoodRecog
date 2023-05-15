@@ -55,8 +55,8 @@ def main():
 # データセットを取得する関数
 def LoadDatasets():
     # データの読み込み
-    test_x = np.load("./dataset/X_train.npy")
-    test_y = np.load("./dataset/Y_train.npy")
+    test_x = np.load("./dataset/X_test.npy")
+    test_y = np.load("./dataset/Y_test.npy")
 
     # one-hotベクトルに変換
     n_labels = len(np.unique(test_y))
